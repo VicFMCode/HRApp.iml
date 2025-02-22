@@ -3,4 +3,59 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+
+    <display-name>HR Management App</display-name>
+
+
+
+    <!-- Application Name -->
+    <display-name>HR Management System</display-name>
+
+    <!-- Servlets and Mappings -->
+
+    <!-- Empleado Servlet -->
+    <servlet>
+        <servlet-name>EmpleadoServlet</servlet-name>
+        <servlet-class>com.hrmanagement.controller.EmpleadoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EmpleadoServlet</servlet-name>
+        <url-pattern>/empleados</url-pattern>
+    </servlet-mapping>
+
+    <!-- Cargo Servlet -->
+    <servlet>
+        <servlet-name>CargoServlet</servlet-name>
+        <servlet-class>com.hrmanagement.controller.CargoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CargoServlet</servlet-name>
+        <url-pattern>/cargos</url-pattern>
+    </servlet-mapping>
+
+    <!-- TipoContratacion Servlet -->
+    <servlet>
+        <servlet-name>TipoContratacionServlet</servlet-name>
+        <servlet-class>com.hrmanagement.controller.TipoContratacionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TipoContratacionServlet</servlet-name>
+        <url-pattern>/tipos-contratacion</url-pattern>
+    </servlet-mapping>
+
+    <!-- Contratacion Servlet -->
+    <servlet>
+        <servlet-name>ContratacionServlet</servlet-name>
+        <servlet-class>com.hrmanagement.controller.ContratacionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ContratacionServlet</servlet-name>
+        <url-pattern>/contrataciones</url-pattern>
+    </servlet-mapping>
+
+    <!-- Welcome Page -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
 </web-app>
